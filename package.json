@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^1.7.2",
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
@@ -8,5 +9,15 @@
     "express-session": "^1.17.1",
     "pg": "^8.11.3",
     "sequelize": "^6.3.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "triviosa",
+  "description": "Project 2. Trivia Application",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
