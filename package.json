@@ -21,7 +21,7 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "name": "triviosa",
+  "name": "clear",
   "description": "Project 2. Trivia Application",
   "version": "1.0.0",
   "main": "server.js",
