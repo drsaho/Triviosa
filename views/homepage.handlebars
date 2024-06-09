@@ -1,1 +1,55 @@
-<h2>This is the homepage</h2>
+{{!< main}} <!-- Extend the main layout -->
+
+<div class="grid-container">
+  <h1 id="quizTitle" class="text-center">Triviosa!</h1>
+
+  <!-- Quiz form -->
+  <form id="quizForm" action="/submit" method="POST" class="grid-x grid-padding-x">
+    <div class="cell medium-6 medium-offset-3">
+      <h2>Trivia Crafter</h2>
+      
+      <label for="categories">Categories
+        <select name="categories" id="categories" class="input-group-field">
+          <option value="0">Random</option>
+        </select>
+      </label>
+      
+      <label for="difficulty">Difficulty
+        <select name="difficulty" id="difficulty" class="input-group-field">
+          <option value="0">Random</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+      
+      <label for="type">Type
+        <select name="type" id="type" class="input-group-field">
+          <option value="0">Random</option>
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True or False</option>
+        </select>
+      </label>
+      
+      <button type="submit" class="button expanded">Create Quiz</button>
+    </div>
+  </form>
+
+  <!-- Overlay for darkening background -->
+  <div id="overlay" class="overlay" style="display:none;"></div>
+
+  <!-- Quiz modal where questions and results will be displayed -->
+  <div id="quizContainer" class="quiz-modal" style="display:none;">
+    <!-- Quiz content will be dynamically added here -->
+  </div>
+
+  <!-- Exit confirmation modal -->
+  <div id="exitConfirmationModal" class="exit-modal" style="display:none;">
+    <div class="modal-content">
+      <h3>Exit Quiz</h3>
+      <p>Are you sure you want to exit the quiz?</p>
+      <button id="confirmExit" class="button alert">Yes</button>
+      <button id="cancelExit" class="button secondary">No</button>
+    </div>
+  </div>
+</div>
