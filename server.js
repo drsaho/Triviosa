@@ -7,12 +7,12 @@ const helpers = require('./utils/helper');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-require("dotenv").config()
+require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers});
+const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: process.env.SECRET,
@@ -39,6 +39,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Define a route to render the homepage
+app.get('/', (req, res) => {
+  res.render('homepage');
+});
+
+// Define a route to handle form submission
+app.post('/submit', (req, res) => {
+  const { categories, difficulty, type } = req.body;
+  // Handle form data here
+  res.send(`Categories: ${categories}, Difficulty: ${difficulty}, Type: ${type}`);
+});
+
+// Use routes defined in the controllers directory
 app.use(routes);
 
 sequelize.sync({ force: true }).then(() => {
