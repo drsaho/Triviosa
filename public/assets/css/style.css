@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249652194110734376/bambathebamba_abstract_logo_ofquestion_mark_from_colored_puzzle_ef002f84-3314-4467-bd3e-56c83da61e5b.png?ex=666814cc&is=6666c34c&hm=2e552ee4893efdb910f75bea2936f751e97dd082b401b093e6a2bda8c34a51af&=&format=webp&quality=lossless&width=910&height=910');
+}
 
 :root {
     --primary-color: #1E3A8A; /* Deep Blue */
@@ -39,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #quizForm {
-    background-color: var(--quaternary-color);
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249656620582174752/bambathebamba_abstract_logo_ofquestion_mark_from_colored_puzzle_25ecb635-99fa-407f-8bf2-c27fe8c96c8f.png?ex=666818eb&is=6666c76b&hm=2b24de72da41dbfaffc7bea154ef17b6951ac151db7dc7f19096aea72e894316&=&format=webp&quality=lossless&width=910&height=910');
     border: 1px solid var(--border-color);
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
