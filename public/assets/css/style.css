@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249652194110734376/bambathebamba_abstract_logo_ofquestion_mark_from_colored_puzzle_ef002f84-3314-4467-bd3e-56c83da61e5b.png?ex=666814cc&is=6666c34c&hm=2e552ee4893efdb910f75bea2936f751e97dd082b401b093e6a2bda8c34a51af&=&format=webp&quality=lossless&width=910&height=910');
+
+body{
+    height: 100vh;
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249886397150793799/bambathebamba_magic_themed_background_large_4k_resolution_for_w_4964d776-286d-465d-bc06-eb0f52fad31d.png?ex=6668eeea&is=66679d6a&hm=18a15a658a657c79a70ebfc4382c473d9c3a3ec2992597275f98da905eb69afb&=&format=webp&quality=lossless&width=910&height=910');
+    background-size: cover;
+    background-position: center;
+
 }
 
 :root {
@@ -17,8 +22,30 @@ body {
     --incorrect-color: #DC2626; /* Red */
     --success-bg: #D1FAE5; /* Light Green */
     --alert-bg: #FECACA; /* Light Red */
+    --inputFieldColor: #ffebfb; /* Deep Blue */
 }
 
+label[for] {
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.input-group-field{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    height: 70px;
+    border:solid 1px rgb(255, 255, 255);
+    outline: 0;
+    color:#555;
+    border-radius: 50px;
+}
 .question {
     font-size: 1em;
     margin-top: 20px;
@@ -36,23 +63,36 @@ body {
     color: var(--primary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2{
+    color: var(--quaternary-color);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ h3, h4, h5, h6 {
     color: var(--primary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 #quizForm {
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249656620582174752/bambathebamba_abstract_logo_ofquestion_mark_from_colored_puzzle_25ecb635-99fa-407f-8bf2-c27fe8c96c8f.png?ex=666818eb&is=6666c76b&hm=2b24de72da41dbfaffc7bea154ef17b6951ac151db7dc7f19096aea72e894316&=&format=webp&quality=lossless&width=910&height=910');
+
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249890609746149437/bambathebamba_wand_4k_resolution_491f7057-7b26-4e49-8a9f-ac4b9e036e79.png?ex=6668f2d7&is=6667a157&hm=f8ceed6cf14d3e8928714795db90ea7399983e24846e70c817eb14f06d7d3099&=&format=webp&quality=lossless&width=910&height=910');
+    background-size: cover;
     border: 1px solid var(--border-color);
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    border-radius: 20px;
+    border-radius: 50px;
+    
+
 }
 
 select{
-    background-color: var(--quaternary-color);
+    background-color: var(--inputFieldColor);
     border: 3px solid var(black);
     border-radius: 20px;
+    text-align: center;
     
 }
 select:hover{
