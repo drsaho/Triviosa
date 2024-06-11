@@ -25,12 +25,20 @@ body{
     --inputFieldColor: #ffebfb; /* Deep Blue */
 }
 
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 label[for] {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
     color: #ffffff;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     text-align: center;
 }
 
@@ -38,7 +46,7 @@ label[for] {
 .input-group-field{
     font-size: 50px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Pacifico", cursive;
     align-items: center;
     height: 70px;
     border:solid 1px rgb(255, 255, 255);
@@ -66,8 +74,8 @@ label[for] {
 h1, h2{
     color: var(--quaternary-color);
     text-align: center;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    font-family: "Pacifico", cursive;
 }
 
  h3, h4, h5, h6 {
@@ -144,7 +152,7 @@ select:hover{
     color: var(--incorrect-color);
     padding: 15px;
     margin-top: 20px;
-    border: 1px solid #f5c6cb;
+    border: 1px solid #ddf5c6;
     border-radius: 5px;
 }
 
