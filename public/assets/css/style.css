@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249886397150793799/bambathebamba_magic_themed_background_large_4k_resolution_for_w_4964d776-286d-465d-bc06-eb0f52fad31d.png?ex=6668eeea&is=66679d6a&hm=18a15a658a657c79a70ebfc4382c473d9c3a3ec2992597275f98da905eb69afb&=&format=webp&quality=lossless&width=910&height=910');
+    background-size: cover;
+    background-position: center;
+
+}
+
 :root {
     --primary-color: #1E3A8A; /* Deep Blue */
     --secondary-color: #F97316; /* Warm Orange */
@@ -14,8 +22,38 @@
     --incorrect-color: #DC2626; /* Red */
     --success-bg: #D1FAE5; /* Light Green */
     --alert-bg: #FECACA; /* Light Red */
+    --inputFieldColor: #ffebfb; /* Deep Blue */
 }
 
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+label[for] {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+
+.input-group-field{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    align-items: center;
+    height: 70px;
+    border:solid 1px rgb(255, 255, 255);
+    outline: 0;
+    color:#555;
+    border-radius: 50px;
+}
 .question {
     font-size: 1em;
     margin-top: 20px;
@@ -33,23 +71,36 @@
     color: var(--primary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2{
+    color: var(--quaternary-color);
+    text-align: center;
+    font-size: 70px;
+    font-family: "Pacifico", cursive;
+}
+
+ h3, h4, h5, h6 {
     color: var(--primary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 #quizForm {
-    background-color: var(--quaternary-color);
+
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249890609746149437/bambathebamba_wand_4k_resolution_491f7057-7b26-4e49-8a9f-ac4b9e036e79.png?ex=6668f2d7&is=6667a157&hm=f8ceed6cf14d3e8928714795db90ea7399983e24846e70c817eb14f06d7d3099&=&format=webp&quality=lossless&width=910&height=910');
+    background-size: cover;
     border: 1px solid var(--border-color);
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    border-radius: 20px;
+    border-radius: 50px;
+    
+
 }
 
 select{
-    background-color: var(--quaternary-color);
+    background-color: var(--inputFieldColor);
     border: 3px solid var(black);
     border-radius: 20px;
+    text-align: center;
     
 }
 select:hover{
@@ -101,7 +152,7 @@ select:hover{
     color: var(--incorrect-color);
     padding: 15px;
     margin-top: 20px;
-    border: 1px solid #f5c6cb;
+    border: 1px solid #ddf5c6;
     border-radius: 5px;
 }
 

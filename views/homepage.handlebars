@@ -1,65 +1,67 @@
 {{!< main}} <!-- Extend the main layout -->
+<body>
+  <div class="grid-container">
+    <h1 id="quizTitle" class="text-center">Triviosa!</h1>
 
-<div class="grid-container">
-  <h1 id="quizTitle" class="text-center">Triviosa!</h1>
+    <!-- Quiz form -->
+    <form id="quizForm" action="/submit" method="POST" class="grid-x grid-padding-x">
+      <div class="cell medium-6 medium-offset-3">
+        <h2 class="pacifico-regular">Trivia Crafter</h2>
+        
+        <label for="categories">Categories
+          <select name="categories" id="categories" class="input-group-field">
+            <option value="0">Random</option>
+            <!-- Add more categories as needed -->
+          </select>
+        </label>
+        
+        <label for="difficulty">Difficulty
+          <select name="difficulty" id="difficulty" class="input-group-field">
+            <option value="0">Random</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        
+        <label for="type">Type
+          <select name="type" id="type" class="input-group-field">
+            <option value="0">Random</option>
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True or False</option>
+          </select>
+        </label>
+        
+        <button type="submit" class="button expanded">Create Quiz</button>
+      </div>
+    </form>
 
-  <!-- Quiz form -->
-  <form id="quizForm" action="/submit" method="POST" class="grid-x grid-padding-x">
-    <div class="cell medium-6 medium-offset-3">
-      <h2>Trivia Crafter</h2>
-      
-      <label for="categories">Categories
-        <select name="categories" id="categories" class="input-group-field">
-          <option value="0">Random</option>
-        </select>
-      </label>
-      
-      <label for="difficulty">Difficulty
-        <select name="difficulty" id="difficulty" class="input-group-field">
-          <option value="0">Random</option>
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
-      </label>
-      
-      <label for="type">Type
-        <select name="type" id="type" class="input-group-field">
-          <option value="0">Random</option>
-          <option value="multiple">Multiple Choice</option>
-          <option value="boolean">True or False</option>
-        </select>
-      </label>
-      
-      <button type="submit" class="button expanded">Create Quiz</button>
+    <!-- Overlay for darkening background -->
+    <div id="overlay" class="overlay" style="display:none;"></div>
+
+    <!-- Quiz modal where questions and results will be displayed -->
+    <div id="quizContainer" class="quiz-modal" style="display:none;">
+      <!-- Quiz content will be dynamically added here -->
     </div>
-  </form>
 
-  <!-- Overlay for darkening background -->
-  <div id="overlay" class="overlay" style="display:none;"></div>
-
-  <!-- Quiz modal where questions and results will be displayed -->
-  <div id="quizContainer" class="quiz-modal" style="display:none;">
-    <!-- Quiz content will be dynamically added here -->
+    <!-- Exit confirmation modal -->
+    <div id="exitConfirmationModal" class="exit-modal" style="display:none;">
+      <div class="modal-content">
+        <h3>Exit Quiz</h3>
+        <p>Are you sure you want to exit the quiz?</p>
+        <button id="confirmExit" class="button alert">Yes</button>
+        <button id="cancelExit" class="button secondary">No</button>
+      </div>
+    </div>
   </div>
 
-  <!-- Exit confirmation modal -->
-  <div id="exitConfirmationModal" class="exit-modal" style="display:none;">
-    <div class="modal-content">
-      <h3>Exit Quiz</h3>
-      <p>Are you sure you want to exit the quiz?</p>
-      <button id="confirmExit" class="button alert">Yes</button>
-      <button id="cancelExit" class="button secondary">No</button>
+  <footer>
+    <div class="socialMedia">
+      <p class="follow">Follow Us</p>
+      <a href="https://github.com/drsaho"><i class="li-github"></i>Amadou</a>
+      <a href="https://github.com/barand14"><i class="li-github"></i>Balalomba</a>
+      <a href="https://github.com/EnduringTimes"><i class="li-github"></i>Menes</a>
     </div>
-  </div>
-</div>;
-
- <footer>
-        <div class="socialMedia">
-            <p class="follow">Follow Us</p>
-            <a href="https://github.com/drsaho"><i class="li-github"></i>Amadou</a>
-            <a href="https://github.com/barand14"><i class="li-github"></i> Balalomba</a>
-            <a href="https://github.com/EnduringTimes"><i class="li-github"></i> Menes</a>
-            
-        </div>
-    </footer>
+  </footer>
+  
+</body>
