@@ -11,6 +11,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/jass.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <header class="grid-x align-center">
       <div class="cell">
         <h1>
-          <span role="img" aria-label="money">💸</span>
+          <span role="img" aria-label="money"><i class="fa-solid fa-user"></i></span>
           <a href="/">Triviosa!</a>
         </h1>
         <nav>
@@ -28,6 +29,7 @@
           <button class="no-button" id="logout">Logout</button>
           {{else}}
           <a href="/login">Login</a>
+           <a href="/signup">Signup</a>
           {{/if}}
         </nav>
       </div>

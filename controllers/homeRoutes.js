@@ -1,5 +1,5 @@
 const router = require("express").Router()
-
+const { User} = require("../Models")
 //base url localhost:3001
 
 router.get("/", (req, res) => {
@@ -13,9 +13,23 @@ router.get("/login", (req, res) => {
     res.render("login.handlebars")
 })
 
-router.get("/profile", (req, res) => {
+router.get("/profile", async (req, res) => {
     // query user info here
-    res.render("profile.handlebars")
+    try{
+        const userData = await User.findAll()
+
+        const users = userData.map(user => user.get({plain: true}))
+       console.log(users)
+        res.render("profile.handlebars", {users}) 
+    }catch(err){
+        console.log(err)
+    }
+    
+})
+
+router.get("/signup", (req, res) => {
+    // query user info here
+    res.render("signup.handlebars")
 })
 
 module.exports = router
