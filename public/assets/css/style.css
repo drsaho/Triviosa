@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 200vh;
     background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249886397150793799/bambathebamba_magic_themed_background_large_4k_resolution_for_w_4964d776-286d-465d-bc06-eb0f52fad31d.png?ex=6668eeea&is=66679d6a&hm=18a15a658a657c79a70ebfc4382c473d9c3a3ec2992597275f98da905eb69afb&=&format=webp&quality=lossless&width=910&height=910');
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@ body{
     --incorrect-color: #DC2626; /* Red */
     --success-bg: #D1FAE5; /* Light Green */
     --alert-bg: #FECACA; /* Light Red */
-    --inputFieldColor: #ffebfb; /* Deep Blue */
+    --inputFieldColor: #ffffff  ; /* Deep Blue */
 }
 
 .pacifico-regular {
@@ -44,12 +44,13 @@ label[for] {
 
 
 .input-group-field{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    font-family: "Pacifico", cursive;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     height: 70px;
     border:solid 1px rgb(255, 255, 255);
+    box-shadow: 5px 6px 73px 1px rgba(255,191,0,1);
     outline: 0;
     color:#555;
     border-radius: 50px;
@@ -71,6 +72,10 @@ label[for] {
     color: var(--primary-color);
 }
 
+#quizTitle{
+    font-size: 300px;
+    text-align: center;
+}
 h1, h2{
     color: var(--quaternary-color);
     text-align: center;
@@ -168,12 +173,13 @@ select:hover{
 }
 
 .quiz-modal {
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 100%;
     max-width: 600px;
+    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1250585445440426096/bambathebamba_4k_pattern_of_question_marks_magic_sparks_4e3f1691-cdf8-41af-8ba1-8bce1f7952a7.png?ex=666b79f4&is=666a2874&hm=452917b157c72a8a45ca5b47c7f18f3edcdff272afdab1b9da154c6ca63c7e7d&=&format=webp&quality=lossless&width=910&height=910');
     background-color: var(--primary-color);
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
