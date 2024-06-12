@@ -6,7 +6,7 @@
 
 body{
     height: 200vh;
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249886397150793799/bambathebamba_magic_themed_background_large_4k_resolution_for_w_4964d776-286d-465d-bc06-eb0f52fad31d.png?ex=6668eeea&is=66679d6a&hm=18a15a658a657c79a70ebfc4382c473d9c3a3ec2992597275f98da905eb69afb&=&format=webp&quality=lossless&width=910&height=910');
+    background-image: url('/assets/mainbg.png');
     background-size: cover;
     background-position: center;
 
@@ -73,7 +73,7 @@ label[for] {
 }
 
 #quizTitle{
-    font-size: 300px;
+    font-size: 200px;
     text-align: center;
 }
 h1, h2{
@@ -91,7 +91,7 @@ h1, h2{
 
 #quizForm {
 
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249890609746149437/bambathebamba_wand_4k_resolution_491f7057-7b26-4e49-8a9f-ac4b9e036e79.png?ex=6668f2d7&is=6667a157&hm=f8ceed6cf14d3e8928714795db90ea7399983e24846e70c817eb14f06d7d3099&=&format=webp&quality=lossless&width=910&height=910');
+    background-image: url('/assets/formbg.png');
     background-size: cover;
     border: 1px solid var(--border-color);
     padding: 50px;
@@ -173,13 +173,13 @@ select:hover{
 }
 
 .quiz-modal {
-    position: relative;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 80%;
     max-width: 600px;
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1250585445440426096/bambathebamba_4k_pattern_of_question_marks_magic_sparks_4e3f1691-cdf8-41af-8ba1-8bce1f7952a7.png?ex=666b79f4&is=666a2874&hm=452917b157c72a8a45ca5b47c7f18f3edcdff272afdab1b9da154c6ca63c7e7d&=&format=webp&quality=lossless&width=910&height=910');
+    background-image: url('/assets/formbg.png');
     background-color: var(--primary-color);
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
