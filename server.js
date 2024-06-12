@@ -54,6 +54,6 @@ app.post('/submit', (req, res) => {
 // Use routes defined in the controllers directory
 app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
