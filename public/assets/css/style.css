@@ -5,8 +5,8 @@
 }
 
 body{
-    height: 100vh;
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249886397150793799/bambathebamba_magic_themed_background_large_4k_resolution_for_w_4964d776-286d-465d-bc06-eb0f52fad31d.png?ex=6668eeea&is=66679d6a&hm=18a15a658a657c79a70ebfc4382c473d9c3a3ec2992597275f98da905eb69afb&=&format=webp&quality=lossless&width=910&height=910');
+    height: 200vh;
+    background-image: url('/assets/mainbg.png');
     background-size: cover;
     background-position: center;
 
@@ -22,7 +22,7 @@ body{
     --incorrect-color: #DC2626; /* Red */
     --success-bg: #D1FAE5; /* Light Green */
     --alert-bg: #FECACA; /* Light Red */
-    --inputFieldColor: #ffebfb; /* Deep Blue */
+    --inputFieldColor: #ffffff  ; /* Deep Blue */
 }
 
 .pacifico-regular {
@@ -44,12 +44,13 @@ label[for] {
 
 
 .input-group-field{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    font-family: "Pacifico", cursive;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     height: 70px;
     border:solid 1px rgb(255, 255, 255);
+    box-shadow: 5px 6px 73px 1px rgba(255,191,0,1);
     outline: 0;
     color:#555;
     border-radius: 50px;
@@ -71,6 +72,10 @@ label[for] {
     color: var(--primary-color);
 }
 
+#quizTitle{
+    font-size: 200px;
+    text-align: center;
+}
 h1, h2{
     color: var(--quaternary-color);
     text-align: center;
@@ -86,7 +91,7 @@ h1, h2{
 
 #quizForm {
 
-    background-image: url('https://media.discordapp.net/attachments/1102385960328626177/1249890609746149437/bambathebamba_wand_4k_resolution_491f7057-7b26-4e49-8a9f-ac4b9e036e79.png?ex=6668f2d7&is=6667a157&hm=f8ceed6cf14d3e8928714795db90ea7399983e24846e70c817eb14f06d7d3099&=&format=webp&quality=lossless&width=910&height=910');
+    background-image: url('/assets/formbg.png');
     background-size: cover;
     border: 1px solid var(--border-color);
     padding: 50px;
@@ -174,6 +179,7 @@ select:hover{
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 600px;
+    background-image: url('/assets/formbg.png');
     background-color: var(--primary-color);
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
