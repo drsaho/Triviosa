@@ -24,3 +24,5 @@ fetch("https://opentdb.com/api_category.php")
     // Handle error gracefully, e.g., display an error message to the user
   });
 
+  fetchQuizCategories(); 
+
