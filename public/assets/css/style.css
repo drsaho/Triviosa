@@ -272,7 +272,7 @@ select:hover{
     font-family: "DM Sans", sans-serif;
 }
 
-#exitConfirm {
+#confirmExit {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;

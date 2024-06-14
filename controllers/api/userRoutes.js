@@ -3,6 +3,7 @@ const { User } = require('../../Models');
 
 
 //create a new user
+// url /api/users
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -18,7 +19,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-//login a user
+//login a users/api/login
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
