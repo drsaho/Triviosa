@@ -8,11 +8,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /**height: 100vh;**/
     margin: 0;
     background-image: url('/assets/mainbg.png');
     background-size: cover;
-    background-position: center;
+    
 }
 
 :root {
@@ -37,6 +37,7 @@ body {
   
 
 label[for] {
+    width: 100%;
     font-weight: bold;
     font-size: 40px;
     font-family: "DM Sans", sans-serif;
@@ -105,14 +106,15 @@ p{
 }
 
 #quizTitle{
-    font-size: 200px;
+    font-size: 100px;
     text-align: center;
 }
+
 h1 {
     font-size: 150px;
     font-weight: bold;
     font-family: "Pacifico", cursive;
-    letter-spacing: 1.1rem;
+    /**letter-spacing: 1.1rem;**/
     line-height:1;
     text-align: center;
     background: linear-gradient(90deg, rgba(186,148,62,1) 0%, rgba(236,172,32,1) 20%, rgba(186,148,62,1) 39%, rgba(249,244,180,1) 50%, rgba(186,148,62,1) 60%, rgba(236,172,32,1) 80%, rgba(186,148,62,1) 100%);
@@ -122,8 +124,9 @@ h1 {
     background-size: 200%;
     background-position: left;
     padding-bottom: 50px;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    
+    /**-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); **/
     
   
   }
@@ -133,22 +136,12 @@ h1 {
   }
 h2 {
    font-weight: bold;
-   background-image: linear-gradient(
-	to right,
-	#462523 0,
-       	#cb9b51 22%, 
-	#f6e27a 45%,
-	#f6f2c0 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#462523 100%);
-   color:transparent;
+  color: white;
    -webkit-background-clip:text;
     font-size: 100px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Pacifico", cursive;
     text-align: center;
-    -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #cb9b51;
+
 
 
 
@@ -168,7 +161,7 @@ h2 {
     border: 1px solid var(--border-color);
     padding: 50px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    border-radius: 150px;
+    border-radius: 50px;
     
 
 }
