@@ -44,23 +44,6 @@
       <!-- Quiz content will be dynamically added here -->
     </div>
 
-<<<<<<< HEAD
-  <!-- Overlay for darkening background -->
-  <div id="overlay" class="overlay" style="display:none;"></div>
-
-  <!-- Quiz modal where questions and results will be displayed -->
-  <div id="quizContainer" class="quiz-modal" style="display:none;">
-    <!-- Quiz content will be dynamically added here -->
-  </div>
-
-  <!-- Exit confirmation modal -->
-  <div id="exitConfirmationModal" class="exit-modal" style="display:none;">
-    <div class="modal-content">
-      <h3 id="exitConfirm">Exit Quiz</h3>
-      <p>Are you sure you want to exit the quiz?</p>
-      <button id="confirmExit" class="button alert">Yes</button>
-      <button id="cancelExit" class="button secondary">No</button>
-=======
     <!-- Exit confirmation modal -->
     <div id="exitConfirmationModal" class="exit-modal" style="display:none;">
       <div class="modal-content">
@@ -69,12 +52,12 @@
         <button id="confirmExit" class="button alert">Yes</button>
         <button id="cancelExit" class="button secondary">No</button>
       </div>
->>>>>>> 8b450583debb9e45b4f777147b296008547e3278
     </div>
   </div>
-     
+
+    <a href="#profileSection">Profile</a>
+   
   <footer>
-    <h2 id="profileSection"><a href="#profileSection">PROFILE</a></h2>
     <div class="socialMedia">
       <p class="follow">Follow Us</p>
       <a href="https://github.com/drsaho"><i class="li-github"></i>Amadou</a>
@@ -86,4 +69,8 @@
   
 </body>
 
-  <script>src="https://cdn.jsdelivr.net/npm/jquery@3."
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3."></script>
+    
+    <script>
+       document.querySelector('#quizTitle').innerHTML += ' <a href="#profileSection">( Profile)</a>';
+    </script>

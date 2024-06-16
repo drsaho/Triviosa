@@ -1,3 +1,10 @@
+function fetchQuizCategories() {
+  const categorySelect = document.getElementById("categories");  // Replace with your dropdown element ID
+
+  // Display loading indicator (optional)
+  categorySelect.innerHTML = '<option>Loading...</option>';  // Set loading text
+
+
 fetch("https://opentdb.com/api_category.php")
   .then((response) => {
     if (!response.ok) {
@@ -25,4 +32,4 @@ fetch("https://opentdb.com/api_category.php")
   });
 
   fetchQuizCategories(); 
-
+}
