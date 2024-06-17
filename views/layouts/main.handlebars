@@ -5,50 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Triviosa</title>
 
-  <!--googlefonts-->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   
   <!-- Foundation CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
   
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/css/jass.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
+<body>
+  <h1 id="quizTitle" class="text-center">Triviosa!</h1>
 
-
-  <div class="grid-container flex-column justify-space-around">
+  <div>
     <header class="grid-x align-center">
       <div class="cell">
-      
-        <!--h1>
-           <span role="img" aria-label="money">💸</span>
-
-          <a href="/">Triviosa!</a>
-        </h1-->
-        <nav>
-          <!-- Conditionally render login or logout links -->
+        <nav class="text-center">
+          <a href="/" class="button">Home</a>
           {{#if logged_in}}
-          <a href="/profile">Profile</a> |
-          <button class="no-button" id="logout">Logout</button>
+            <a class="button" href="/profile">Profile</a> |
+            <button id="logout-button" class="button">Logout</button>
           {{else}}
-          <a href="/login">Login</a>
-           <a href="/signup">Signup</a>
+            <a href="/login" class="button">Login</a>
+            <a href="/signup" class="button">Signup</a>
           {{/if}}
         </nav>
       </div>
     </header>
     <main class="grid-container mt-5">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      <!-- Footer content -->
-    </footer>
+    
   </div>
 
   <!-- Foundation JavaScript -->
@@ -63,8 +56,20 @@
   <script src="/assets/js/logout.js"></script>
   {{/if}}
 
+<footer class="milk">
+  <div class="socialMedia">
+    <p class="follow">Follow Us <a href="https://github.com/drsaho"><i class="li-github"></i> Amadou</a>
+    <a href="https://github.com/barand14"><i class="li-github"></i> Balalomba</a>
+    <a href="https://github.com/EnduringTimes"><i class="li-github"></i> Menes</a></p>
+   
+    <p class="follow">  &copy; 2024 Triviosa. All rights reserved.</p>
+  </div>
+</footer>
   <!-- Custom JavaScript -->
   <script src="/assets/js/choice.js"></script>
   <script src="/assets/js/quiz.js"></script>
+  <script src="/assets/js/login.js"></script>
+  <script src="/assets/js/signup.js"></script>
 
+</body>
 </html>

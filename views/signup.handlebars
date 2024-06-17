@@ -1,36 +1,29 @@
-<div style="justify-content: center; width:90%; height:100%; margin:auto; justify-content:center; border:solid">
-    <form class="signup-form">
-        <div class="card" style="background-color: #6f7e83;">
-            <div class="card-header" style="
-        background-color: rgb(97, 195, 210);
-        color: white;
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 20px;
-      ">
-                <p>Sign Up</p>
-            </div>
-            <div class="card-body" style="font-size: 20px;">
-                <label for="name-login">username:</label>
-                <div style="margin-bottom: 20px; margin-top: 20px">
-                    <input type="text" id="username-signup" style="width: 100%" />
-                </div>
-                 <label for="email-login">email:</label>
-                <div style="margin-bottom: 20px; margin-top: 20px">
-                    <input type="text" id="email-signup" style="width: 100%" />
-                </div>
-                <label for="password-login">password:</label>
-                <div style="margin-bottom: 20px; margin-top: 20px">
-                    <input type="password" id="password-signup" style="width: 100%" />
-                </div>
-                <div>
-                    <button style="width: 100%;" type="submit">Sing Up</button>
-                    <div id="signup-action">
-                        <a href="/login" style="color: black; text-decoration:none">Login</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+{{!< main}} <!-- Extend the main layout -->
+
+<div class="form-container signup-form-container">
+  <form class="signup-form card">
+    <div class="card-header">
+      <p>Signup</p>
+    </div>
+    <div class="card-body">
+      <label for="name-signup">Name:</label>
+      <div class="input-container">
+        <input type="text" id="name-signup" class="input-field" />
+      </div>
+      <label for="email-signup">Email:</label>
+      <div class="input-container">
+        <input type="email" id="email-signup" class="input-field" />
+      </div>
+      <label for="password-signup">Password:</label>
+      <div class="input-container">
+        <input type="password" id="password-signup" class="input-field" />
+      </div>
+      <div class="button-container">
+        <button type="submit" class="button expanded">Signup</button>
+      </div>
+      <div id="login-action" class="text-center">
+        <a href="/login">Login</a>
+      </div>
+    </div>
+  </form>
 </div>
-<script src="/assets/js/signup.js"></script>

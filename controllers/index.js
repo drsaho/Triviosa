@@ -1,9 +1,8 @@
-const router = require("express").Router()
-const homeRoutes = require("./homeRoutes")
-const apiRoutes = require("./api")
+const router = require('express').Router();
+const apiRoutes = require('./api');
+const homeRoutes = require('./homeRoutes');
 
-//localhost:3001
-router.use("/", homeRoutes)// responsible for view urls and get from db
-router.use("/api", apiRoutes) // responsible for posts, puts, deletes and any changes to db
+router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
 
-module.exports = router
+module.exports = router;
