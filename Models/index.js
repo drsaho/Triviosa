@@ -1,5 +1,3 @@
-const User = require("./User")
+const User = require('./User');
 
-// associations here
-
-module.exports = {User}
+module.exports = { User };

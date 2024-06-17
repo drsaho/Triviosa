@@ -1,18 +1,34 @@
-<body>
-  <div class="grid-container">
-    <h1 id="quizTitle" class="text-center">Triviosa!</h1>
+{{!< main}} <!-- Extend the main layout -->
 
-    <form id="quizForm" action="/submit" method="POST" class="grid-x grid-padding-x">
-      </form>
-  
-    <h1 id="quizTitle"><a href="#quiztitle">Triviosa!</h1>
+<body>
+  <div class="grid-container main-container">
+    <header class="text-center">
     
-    {{#each users}}
-      <h2>{{name}}</h2>
-      <h2>{{email}}</h2>
-    {{/each}}
+    </header>
+
+    <main class="main-content">
+      <div class="profile-info card">
+        <div class="card-header">
+          <h2 class="text-center">User Information</h2>
+        </div>
+        <div class="card-body">
+          {{#each users}}
+            <div class="profile-details">
+              <h3>Name: {{name}}</h3>
+              <h3>Email: {{email}}</h3>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </main>
+
+   
   </div>
 
-  <footer>
-    </footer>
+  <!-- Foundation JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script>
+      $(document).foundation();
+  </script>
 </body>

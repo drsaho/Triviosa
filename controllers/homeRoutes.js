@@ -1,35 +1,38 @@
-const router = require("express").Router()
-const { User} = require("../Models")
-//base url localhost:3001
+const router = require('express').Router();
 
-router.get("/", (req, res) => {
-    // query db here
-    res.render("homepage.handlebars")
-})
+router.get('/', (req, res) => {
+  res.render('homepage', { 
+    logged_in: req.session.logged_in // Pass logged_in status to the template
+  });
+});
 
+router.get('/login', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
 
-router.get("/login", (req, res) => {
+  res.render('login');
+});
 
-    res.render("login.handlebars")
-})
+router.get('/signup', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
 
-router.get("/profile", async (req, res) => {
-    // query user info here
-    try{
-        const userData = await User.findAll()
+  res.render('signup');
+});
 
-        const users = userData.map(user => user.get({plain: true}))
-       console.log(users)
-        res.render("profile.handlebars", {users}) 
-    }catch(err){
-        console.log(err)
-    }
-    
-})
+router.get('/profile', (req, res) => {
+  if (!req.session.logged_in) {
+    res.redirect('/login');
+    return;
+  }
 
-router.get("/signup", (req, res) => {
-    // query user info here
-    res.render("signup.handlebars")
-})
+  res.render('profile', {
+    logged_in: req.session.logged_in
+  });
+});
 
-module.exports = router
+module.exports = router;
